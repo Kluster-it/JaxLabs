@@ -10,4 +10,8 @@ public class AnuncianteResource {
 
 
     private EntityManager em;
+
+    private Object listAll() {
+        return em.createQuery("select a from Anunciante a").getResultList();
+    }
 }

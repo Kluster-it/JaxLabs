@@ -9,19 +9,23 @@ import javax.persistence.Table;
  * Created by marcelo on 7/26/15.
  */
 @Entity
-@Table(name = "tbl_anunciante")
-public class Anunciante {
+@Table(name = "tbl_endereco")
+public class Endereco {
+
 
     @Id
     @GeneratedValue
     private Long id;
 
-    private String nome;
+    private String tipoLogradouro;
 
-    private String creci;
+    private String logradouro;
 
-    private Endereco endereco;
+    private String bairro;
 
-    private Contato contato;
+    private String cidade;
 
+    private String uf;
+
+    private String cep;
 }
